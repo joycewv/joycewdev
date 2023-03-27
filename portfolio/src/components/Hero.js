@@ -2,7 +2,7 @@ const Hero = () => {
     return (
         <>
         <div>
-            This is a hero.
+            This is a hero section.
         </div>
         </>
 

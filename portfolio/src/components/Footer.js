@@ -1,4 +1,4 @@
-import { Box, Container, Flex, HStack, Stack, Text } from "@chakra-ui/react";
+import { Box, Flex, HStack, Stack, Text } from "@chakra-ui/react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
 
@@ -17,8 +17,20 @@ export default function Footer () {
     return (
         <>
         <Box bg={'#333333'}>
-            <Container>
-                <Text>© 2023 Joycew. All Rights Reserved.</Text>
+            <Flex
+             px={'60'}
+             py={'16'}
+             margin="0 auto"
+             justifyContent={'space-between'}
+             alignItems={'center'}
+             >
+                <Stack
+                 color={'#FFFFFF'}
+                 fontSize={'lg'}
+                 fontWeight={'bolder'}
+                 >
+                    <Text>© 2023 Joycew. All Rights Reserved.</Text>
+                </Stack>
                 <Stack>
                     <HStack spacing={8}>
                         {socials.map(({ icon, url}) => (
@@ -26,26 +38,13 @@ export default function Footer () {
                             href={url}
                             target="_blank"
                             rel="noopener noreferrer">
-                                <FontAwesomeIcon icon={icon} size="2x" key={url}/>
+                                <FontAwesomeIcon icon={icon} size="2x" key={url} style={{color: "#ffffff"}}/>
                             </a>
                         )
                         )}
                     </HStack>
                 </Stack>
-            </Container>
-            <footer>
-                <Flex
-                 alignItems={'center'}
-                 justifyContent={'center'}
-                 margin={'0 auto'}
-                 px={'10'}
-                 py={'10'}
-                 color={'#FFFFFF'}
-                 fontSize={'lg'}
-                 fontWeight={'bold'}>
-                    <Text>© 2023 Joycew. All Rights Reserved.</Text>
-                </Flex>
-            </footer>
+            </Flex>
         </Box>
         </>
 
