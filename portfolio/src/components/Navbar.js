@@ -1,6 +1,21 @@
+import React from "react";
 import { Box, Flex, HStack, Image, } from "@chakra-ui/react";
 
 export default function Navbar () {
+    const handleClick =(anchor) => () => {
+        const id = `${anchor}-section`;
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+            });
+        }
+
+    };
+
+    
+
     return (
         <>
         <Box bg={'#edefee'}>
@@ -17,9 +32,9 @@ export default function Navbar () {
                 </Flex>
                 <HStack spacing={6} fontSize={'lg'} fontWeight={'bold'}>
                             <a href="/">Home</a>
-                            <a href="/about">About</a>
-                            <a href="/projects">Projects</a>
-                            <a href="/contact">Contact</a>
+                            <a href="/about" onClick={handleClick("about")}>About</a>
+                            <a href="/projects" >Projects</a>
+                            <a href="/contact" onClick={handleClick("contactme") }>Contact</a>
                 </HStack>
             </Flex>
         </Box>

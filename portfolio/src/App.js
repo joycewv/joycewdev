@@ -3,9 +3,11 @@ import { ChakraProvider } from '@chakra-ui/react'
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
-import About from './components/About';
-import Projects from './components/Projects';
+import AboutSection from './components/AboutSection';
 import Contact from './components/Contact';
+import ContectMeSection from './components/ContactMeSection';
+import ProjectsSection from './components/ProjectsSection';
+
 
 function App() {
   return (
@@ -13,8 +15,9 @@ function App() {
     <ChakraProvider>
       <Navbar></Navbar>
       <Hero></Hero>
-      <About></About>
-      <Projects></Projects>
+      <AboutSection></AboutSection>
+      <ProjectsSection></ProjectsSection>
+      <ContectMeSection></ContectMeSection>
       <Contact></Contact>
       <Footer></Footer>
     </ChakraProvider>
