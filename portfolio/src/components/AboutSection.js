@@ -27,9 +27,9 @@ import { Button, Flex, Heading, Image, Stack, Text, useBreakpointValue, } from '
 
   export default function AboutSection() {
     return (
-      <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }} bg={'blue'} p={40}>
-        <Flex flex={1} bg={'#edefee'} >
-          <Image alt={'About Image'} objectFit={'cover'} src={require('../assets/laptopwcoffee.jpg')} rounded={'lg'}/>
+      <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }} p={40} spacing={'16'}>
+        <Flex flex={1} borderRadius={'3xl'}>
+          <Image alt={'About Image'} objectFit={'cover'} src={require('../assets/laptopwcoffee.jpg')} borderRadius={'3xl'} />
         </Flex>
         <Flex p={8} flex={1} align={'center'} justify={'center'}>
           <Stack spacing={6} w={'full'} maxW={'lg'}>
@@ -45,7 +45,7 @@ import { Button, Flex, Heading, Image, Stack, Text, useBreakpointValue, } from '
                 ABOUT ME
               </Text>
             </Heading>
-            <Heading color={'pink.400'} as={'span'}>A aspiring Front-end Developer based in Sydney, Australia</Heading>
+            <Heading color={'pink.400'} as={'span'} fontSize={'3xl'} >A aspiring Front-end Developer based in Sydney, Australia</Heading>
             <Text fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}>
               As a Junior Front-End Developer, I possess an impressive arsenal of skills in HTML, CSS, JavaScript, React.
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
