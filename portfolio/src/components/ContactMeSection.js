@@ -24,9 +24,6 @@ export default function ContectMeSection () {
 
     })
 
-
-
-
     return (
         <>
         <Box bg={'#FFB6C1'} py={'16'} spacing={'8'}>

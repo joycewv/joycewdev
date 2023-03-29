@@ -1,28 +1,4 @@
 import React from "react";
-/*import { Box, Flex, Heading, Image, Stack, Text, } from "@chakra-ui/react";*/
-
-/*export default function AboutSection () {
-    return (
-        <>
-        <Stack bg={'#FFF5EE'}>
-            <Heading as={'h1'} id="about-section">About</Heading>
-            <Box flex={1}>
-                <Flex>
-                    <Image src={require('../assets/laptopwcoffee.jpg')}/>
-                </Flex>
-                <Flex>
-                    <Stack>
-                        <Heading>A aspiring Front-end Developer based in Sydney, Australia</Heading>
-                        <Text>As a Junior Front-End Developer, I possess an impressive arsenal of skills in HTML, CSS, JavaScript, React. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Text>
-                    </Stack>
-                </Flex>
-            </Box>
-        </Stack>
-        <p>This is About section</p>
-        </>
-    )
-}*/
-
 import { Button, Flex, Heading, Image, Stack, Text, useBreakpointValue, } from '@chakra-ui/react';
 
   export default function AboutSection() {
