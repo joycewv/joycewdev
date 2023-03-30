@@ -25,7 +25,7 @@ import {
 
   export default function ContectSection () {
     return (
-      <Container bg={'#F8F8FF'} maxW="full" mt={0} centerContent overflow="hidden">
+      <Container bg={'#F8F8FF'} maxW="full" mt={0} centerContent overflow="hidden" id="contact">
         <Flex>
           <Box
             bg="#fbd0d4"
@@ -48,7 +48,7 @@ import {
                           height="48px"
                           width="200px"
                           variant="ghost"
-                          color="#DCE2FF"
+                          color="#0B0E3F"
                           _hover={{ border: '2px solid #FF1493' }}
                           leftIcon={<FontAwesomeIcon icon={faEnvelopeOpenText} color="#FF1493" size="20px" />}>
                           hello@abc.com
@@ -58,7 +58,7 @@ import {
                           height="48px"
                           width="200px"
                           variant="ghost"
-                          color="#DCE2FF"
+                          color="#0B0E3F"
                           _hover={{ border: '2px solid #FF1493' }}
                           leftIcon={<FontAwesomeIcon icon={faLocationDot} color="#FF1493" size="20px" />}>
                           Sydney, Australia
@@ -76,7 +76,7 @@ import {
                         size="lg"
                         isRound={true}
                         _hover={{ bg: '#FF1493' }}
-                        icon={<FontAwesomeIcon icon={faLinkedinIn} size="28px"/>}
+                        icon={<FontAwesomeIcon icon={faLinkedinIn} size="lg"/>}
                       />
                       <IconButton
                         aria-label="github"
@@ -84,7 +84,7 @@ import {
                         size="lg"
                         isRound={true}
                         _hover={{ bg: '#FF1493' }}
-                        icon={<FontAwesomeIcon icon={faGithub} size="28px"/>}
+                        icon={<FontAwesomeIcon icon={faGithub} size="lg"/>}
                       />
                     </HStack>
                   </Box>

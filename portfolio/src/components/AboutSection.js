@@ -2,14 +2,28 @@ import React from "react";
 import { Button, Flex, Heading, Image, Stack, Text, useBreakpointValue, } from '@chakra-ui/react';
 
   export default function AboutSection() {
+
+    const handleClick =(button) => () => {
+      const id = `${button}-section`;
+      const element = document.getElementById(id);
+      if (element) {
+          element.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+          });
+      }
+  }
+
+
+
     return (
-      <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }} p={40} spacing={'16'}>
+      <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }} p={40} spacing={'16'} id="about-section">
         <Flex flex={1} borderRadius={'3xl'}>
           <Image alt={'About Image'} objectFit={'cover'} src={require('../assets/laptopwcoffee.jpg')} borderRadius={'3xl'} />
         </Flex>
         <Flex p={8} flex={1} align={'center'} justify={'center'}>
           <Stack spacing={6} w={'full'} maxW={'lg'}>
-            <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
+            <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }} >
               <Text as={'span'} position={'relative'} _after={{ content: "''", width: 'full',
                   height: useBreakpointValue({ base: '20%', md: '30%' }),
                   position: 'absolute',
@@ -30,7 +44,7 @@ import { Button, Flex, Heading, Image, Stack, Text, useBreakpointValue, } from '
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </Text>
             <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
-              <Button rounded={'full'} bg={'hotpink'} color={'white'} _hover={{ bg: 'pink.500'}}>Contact me</Button>
+              <Button rounded={'full'} bg={'hotpink'} color={'white'} _hover={{ bg: 'pink.500'}} onClick={handleClick("contact")}>Contact me</Button>
             </Stack>
           </Stack>
         </Flex>

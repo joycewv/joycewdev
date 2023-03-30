@@ -33,9 +33,9 @@ export default function ProjectsSection () {
 
     return (
         <>
-        <VStack p={'40'} spacing={'8'} >
+        <VStack p={'40'} spacing={'8'} id="projects-section" >
             <Box>
-                <Heading fontSize={'5xl'}>
+                <Heading fontSize={'5xl'} >
                     <Text
                      as={'span'}
                      position={'relative'}

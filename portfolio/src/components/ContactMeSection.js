@@ -26,9 +26,9 @@ export default function ContectMeSection () {
 
     return (
         <>
-        <Box bg={'#FFB6C1'} py={'16'} spacing={'8'}>
+        <Box bg={'#FFB6C1'} py={'16'} spacing={'8'} id="contactme-section">
             <VStack p={32} alignItems={'flex-start'}>
-                <Heading as={'h1'} id="contactme-section">Contact me</Heading>
+                <Heading as={'h1'} >Contact me</Heading>
                 <Box p={6} rounded= {'md'} w={'100%'}>
                     <form>
                         <VStack spacing={'4'} >
