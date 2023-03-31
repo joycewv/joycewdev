@@ -5,6 +5,7 @@ import Card from "./Card";
 
 
 
+
 export default function ProjectsSection () {
     const projects = [
         {
@@ -12,13 +13,20 @@ export default function ProjectsSection () {
             projectnumber: "project 1",
             title: "Little Lemon Restaurant",
             description: "A restaurant website, the online platform allows users to reserve a table and browse online menu. The website provides an interface for searching, comparing food, and reserving table.",
-
+            techstack: "React",
+            libraries: "@chakra-ui/react, formik, react-router-dom",
+            codelink: "https://github.com/joycewv/littlelemon",
+            demolink: "https://clg-week10-assignement.netlify.app/",
         },
         {
             getImageSrc: () => require("../assets/joycew-logo-1.png"),
             projectnumber: "project 2",
             title: "Little Lemon Restaurant",
             description: "A restaurant website, the online platform allows users to reserve a table and browse online menu. The website provides an interface for searching, comparing food, and reserving table.",
+            techstack: "AAA",
+            libraries: "@chakra-ui/react",
+            codelink: "https://github.com/joycewv/clg-week6",
+            demolink: "https://clg-week6-assignment.netlify.app/",
 
         },
         {
@@ -26,10 +34,14 @@ export default function ProjectsSection () {
             projectnumber: "project 3",
             title: "Little Lemon Restaurant",
             description: "A restaurant website, the online platform allows users to reserve a table and browse online menu. The website provides an interface for searching, comparing food, and reserving table.",
-
+            techstack: "BBB",
+            libraries: "react-router-dom",
+            codelink: "https://github.com/joycewv/CLG-Week-1",
+            demolink: "https://clg-week1-assignment.netlify.app/",
         },
 
     ];
+
 
     return (
         <>
@@ -50,7 +62,7 @@ export default function ProjectsSection () {
                 </Heading>
             </Box>
             <Spacer />
-            <Box display={'grid'} gridTemplateColumns="repeat(3,minmax(0,1fr))" gridGap={8}>
+            <Box display={'grid'} gridTemplateColumns="repeat(1,minmax(0,1fr))" gridGap={16}>
                 {projects.map((project) => (
                     <Card
                      key={project.title}
@@ -58,7 +70,11 @@ export default function ProjectsSection () {
                      projectnumber={project.projectnumber}
                      title={project.title}
                      description={project.description}
-                      />
+                     techstack={project.techstack}
+                     libraries={project.libraries}
+                     codelink={project.codelink}
+                     demolink={project.demolink}
+                    />
                 ))}
 
             </Box>

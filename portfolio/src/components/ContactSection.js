@@ -51,7 +51,7 @@ import {
                           color="#0B0E3F"
                           _hover={{ border: '2px solid #FF1493' }}
                           leftIcon={<FontAwesomeIcon icon={faEnvelopeOpenText} color="#FF1493" size="20px" />}>
-                          hello@abc.com
+                          hello@joycew.dev
                         </Button>
                         <Button
                           size="md"

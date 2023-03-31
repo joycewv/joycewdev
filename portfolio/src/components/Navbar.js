@@ -44,7 +44,7 @@ export default function Navbar () {
 
     return (
         <>
-        <Box bg={'#edefee'}>
+        <Box bg={'#F8F8FF'}>
             <Flex
              //maxWidth="1280px"
              margin="0 auto"

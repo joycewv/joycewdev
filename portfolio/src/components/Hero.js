@@ -18,7 +18,7 @@ const socials = [
 const Hero = () => {
     return (
         <>
-        <Stack bg={'#F8F8FF'} >
+        <Stack  >
             <Box >
                 <Stack direction={'row'}  p={'28'} spacing={'16'}>
                     <Flex p={8} flex={1} align={'center'} justify={'center'} spacing={'16'}>
