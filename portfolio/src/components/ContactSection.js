@@ -2,6 +2,8 @@ import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelopeOpenText, faLocationDot} from "@fortawesome/free-solid-svg-icons";
 import { faUser, faEnvelope} from "@fortawesome/free-regular-svg-icons";
+import { useFormik} from "formik";
+import * as Yup from 'yup';
 import {
     Container,
     Flex,
@@ -20,11 +22,31 @@ import {
     InputGroup,
     InputLeftElement,
     Textarea,
+    FormErrorMessage
   } from '@chakra-ui/react';
 
 
   export default function ContectSection () {
+
+    const formik = useFormik ({
+      initialValues: {
+        firstName: "",
+        email: "",
+        Comment: "",
+      },
+
+      validationSchema: Yup.object({
+        firstName: Yup.string().required("Required"),
+        email: Yup.string().email("Invalid email address").required("Required"),
+        comment: Yup.string()
+         .min(25, "Must be at least 25 characters")
+         .required("Required"),
+
+      }),
+    })
+
     return (
+      <>
       <Container bg={'#F8F8FF'} maxW="full" mt={0} centerContent overflow="hidden" id="contact">
         <Flex>
           <Box
@@ -93,35 +115,41 @@ import {
                   <Box bg="white" borderRadius="lg">
                     <Box m={8} color="#0B0E3F">
                       <VStack spacing={5}>
-                        <FormControl id="name">
-                          <FormLabel>Your Name</FormLabel>
+                        <FormControl isInvalid={!!formik.errors.firstName && formik.touched.firstName}>
+                          <FormLabel htmlFor="firstName">Your Name</FormLabel>
                           <InputGroup borderColor="#E0E1E7">
                             <InputLeftElement
                               pointerEvents="none"
                               children={<FontAwesomeIcon icon={faUser} color="gray.800" />}
                             />
-                            <Input type="text" size="md" />
+                            <Input type="text" size="md" id="firstName" name="firstName" {...formik.getFieldProps("firstName")}  />
                           </InputGroup>
+                          <FormErrorMessage>{formik.errors.firstName}</FormErrorMessage>
                         </FormControl>
-                        <FormControl id="name">
-                          <FormLabel>Mail</FormLabel>
+                        <FormControl isInvalid={!!formik.errors.email && formik.touched.email}>
+                          <FormLabel htmlFor="email">Mail</FormLabel>
                           <InputGroup borderColor="#E0E1E7">
                             <InputLeftElement
                               pointerEvents="none"
                               children={<FontAwesomeIcon icon={faEnvelope} color="gray.800" />}
                             />
-                            <Input type="text" size="md" />
+                            <Input size="md" id="email" name="email" type="email" {...formik.getFieldProps("email")} />
                           </InputGroup>
+                          <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
                         </FormControl>
-                        <FormControl id="name">
-                          <FormLabel>Message</FormLabel>
+                        <FormControl isInvalid={!!formik.errors.comment && formik.touched.comment}>
+                          <FormLabel htmlFor="comment">Message</FormLabel>
                           <Textarea
                             borderColor="gray.300"
                             _hover={{
                               borderRadius: 'gray.300',
                             }}
                             placeholder="message"
+                            id="comment"
+                            name="comment"
+                            {...formik.getFieldProps("comment")}
                           />
+                          <FormErrorMessage>{formik.errors.comment}</FormErrorMessage>
                         </FormControl>
                         <FormControl id="name" float="right">
                           <Button
@@ -141,5 +169,6 @@ import {
           </Box>
         </Flex>
       </Container>
+      </>
     );
   }
