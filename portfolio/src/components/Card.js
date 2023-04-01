@@ -7,9 +7,9 @@ import React from "react";
 export default function Card ({ imageSrc, projectnumber, title, description, techstack, libraries, codelink, demolink}) {
   return (
     <Box>
-      <Stack maxW={'890px'} w={'full'} bg={useColorModeValue('white', 'gray.900')} boxShadow={'2xl'} rounded={'3xl'} p={6} overflow={'hidden'}>
-        <Box h={'210px'} bg={'gray.100'} mt={-6} mx={-6} mb={6} pos={'relative'}>
-          <Image src={imageSrc} alt={title} />
+      <Stack maxW={'700px'} w={'full'} bg={useColorModeValue('white', 'gray.900')} boxShadow={'2xl'} rounded={'3xl'} p={6} overflow={'hidden'}>
+        <Box h={'210px'} bg={'gray.100'} mt={-6} mx={-6} mb={6} pos={'relative'} boxSize={'-moz-fit-content'}>
+          <Image src={imageSrc} alt={title}/>
         </Box>
         <Box>
         <Stack spacing={4}>

@@ -1,3 +1,5 @@
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelopeOpenText, faLocationDot} from "@fortawesome/free-solid-svg-icons";
@@ -27,6 +29,19 @@ import {
 
 
   export default function ContectSection () {
+
+    const form = useRef();
+    const sendEmail = (e) => {
+      e.preventDefault();
+      emailjs.sendForm('service_ddao7bx', 'template_rhtv45t', form.current, 'vtf7S3zvYoYTvrOvu')
+      .then((result) => {
+          console.log(result.text);
+          console.log("comment sent")
+      }, (error) => {
+          console.log(error.text);
+      });
+
+    }
 
     const formik = useFormik ({
       initialValues: {
@@ -61,7 +76,7 @@ import {
                   <Box>
                     <Heading fontSize={'5xl'}>CONTACT</Heading>
                     <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
-                      Fill up the form below to keep in touch
+                      Fill up the form to keep in touch!
                     </Text>
                     <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
                       <VStack pl={0} spacing={3} alignItems="flex-start">
@@ -112,8 +127,9 @@ import {
                   </Box>
                 </WrapItem>
                 <WrapItem>
-                  <Box bg="white" borderRadius="lg">
+                  <Box bg="white" borderRadius="lg" >
                     <Box m={8} color="#0B0E3F">
+                      <form ref={form} onSubmit={sendEmail}>
                       <VStack spacing={5}>
                         <FormControl isInvalid={!!formik.errors.firstName && formik.touched.firstName}>
                           <FormLabel htmlFor="firstName">Your Name</FormLabel>
@@ -156,11 +172,14 @@ import {
                             variant="solid"
                             bg={'hotpink'}
                             color={'white'}
-                            _hover={{ bg: 'pink.500'}}>
+                            _hover={{ bg: 'pink.500'}}
+                            type="submit" value="Send"
+                            >
                             Send Message
                           </Button>
                         </FormControl>
                       </VStack>
+                      </form>
                     </Box>
                   </Box>
                 </WrapItem>

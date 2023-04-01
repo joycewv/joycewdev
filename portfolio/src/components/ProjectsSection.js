@@ -9,9 +9,9 @@ import Card from "./Card";
 export default function ProjectsSection () {
     const projects = [
         {
-            getImageSrc: () => require("../assets/joycew-logo-1.png"),
+            getImageSrc: () => require("../assets/header.png"),
             projectnumber: "project 1",
-            title: "Little Lemon Restaurant",
+            title: "Little Lemon Restaurant 🍋",
             description: "A restaurant website, the online platform allows users to reserve a table and browse online menu. The website provides an interface for searching, comparing food, and reserving table.",
             techstack: "React",
             libraries: "@chakra-ui/react, formik, react-router-dom",
@@ -19,7 +19,7 @@ export default function ProjectsSection () {
             demolink: "https://clg-week10-assignement.netlify.app/",
         },
         {
-            getImageSrc: () => require("../assets/joycew-logo-1.png"),
+            getImageSrc: () => require("../assets/specials.png"),
             projectnumber: "project 2",
             title: "Little Lemon Restaurant",
             description: "A restaurant website, the online platform allows users to reserve a table and browse online menu. The website provides an interface for searching, comparing food, and reserving table.",
@@ -30,7 +30,7 @@ export default function ProjectsSection () {
 
         },
         {
-            getImageSrc: () => require("../assets/joycew-logo-1.png"),
+            getImageSrc: () => require("../assets/reservation.png"),
             projectnumber: "project 3",
             title: "Little Lemon Restaurant",
             description: "A restaurant website, the online platform allows users to reserve a table and browse online menu. The website provides an interface for searching, comparing food, and reserving table.",
