@@ -6,7 +6,7 @@ import React from "react";
 
 export default function Card ({ imageSrc, projectnumber, title, description, techstack, libraries, codelink, demolink}) {
   return (
-    <VStack color={'black'} bg={'gray.100'} borderRadius={'xl'}>
+    <VStack color={'black'} bg={'gray.100'} borderRadius={'xl'} maxW={'3xl'}>
       <Image borderRadius={'xl'} src={imageSrc} alt={title}/>
       <VStack spacing={'4'} p={'4'} alignItems={'flex-start'}>
         <HStack>

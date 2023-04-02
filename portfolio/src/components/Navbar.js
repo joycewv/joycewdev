@@ -1,10 +1,12 @@
 /*import React, { useEffect, useRef } from "react";*/
-import { Box, Flex, HStack, Image, } from "@chakra-ui/react";
+import { Box, Flex, HStack, Image, useMediaQuery, } from "@chakra-ui/react";
 
 
 
 
 export default function Navbar () {
+
+    const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
 
     /*const headerRef = useRef(null);
     useEffect(() => {
@@ -40,8 +42,6 @@ export default function Navbar () {
         }
     }
 
-
-
     return (
         <>
         <Box bg={'#F8F8FF'}>
@@ -56,11 +56,10 @@ export default function Navbar () {
              transitionProperty="transform"
              transitionDuration=".3s"
              transitionTimingFunction="ease-in-out"
+             direction={isNotSmallerScreen ? "row" : "column"}
              /*ref={headerRef}*/
              >
-                <Flex>
-                    <Image src={require('../assets/joycew-logo-1.png')} alt={'logo'} width={'150'} height={'37.5'} />
-                </Flex>
+                <Image src={require('../assets/joycew-logo-1.png')} alt={'logo'} width={'150'} height={'37.5'} />
                 <HStack spacing={6} fontSize={'lg'} fontWeight={'bold'} style={{ color: '#333333' }}>
                     <a href="/">Home</a>
                     <a href="#about" onClick={handleClick("about")}  >About</a>

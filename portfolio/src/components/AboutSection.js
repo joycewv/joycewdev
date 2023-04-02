@@ -17,7 +17,7 @@ import { Button, Flex, Heading, Image, Stack, Text, useBreakpointValue, } from '
 
 
     return (
-      <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }} p={40} spacing={'16'} id="about-section">
+      <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }} p={4} spacing={'16'} id="about-section">
         <Flex flex={1} borderRadius={'3xl'}>
           <Image alt={'About Image'} objectFit={'cover'} src={require('../assets/laptopwcoffee.jpg')} borderRadius={'3xl'} />
         </Flex>
