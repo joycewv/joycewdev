@@ -4,8 +4,8 @@ import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import AboutSection from './components/AboutSection';
-import ProjectsSection from './components/ProjectsSection';
 import ContectSection from './components/ContactSection';
+import V2ProjectsSection from './components/V2ProjectSection';
 
 
 
@@ -16,7 +16,7 @@ function App() {
       <Navbar></Navbar>
       <Hero></Hero>
       <AboutSection></AboutSection>
-      <ProjectsSection></ProjectsSection>
+      <V2ProjectsSection />
       <ContectSection></ContectSection>
       <Footer></Footer>
     </ChakraProvider>
