@@ -13,7 +13,7 @@ export default function V2ProjectsSection () {
 
     return (
         <>
-        <VStack p={'4'} spacing={'-2'} id="projects-section" >
+        <VStack id="projects-section" >
             <Box>
                 <Heading fontSize={'5xl'} >
                     <Text
@@ -29,10 +29,8 @@ export default function V2ProjectsSection () {
                         PROJECTS</Text>
                 </Heading>
             </Box>
-            <Box>
                 <Project1 />
                 <Project2 />
-            </Box>
         </VStack>
         </>
     )
