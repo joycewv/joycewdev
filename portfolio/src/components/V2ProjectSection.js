@@ -4,18 +4,14 @@ import Project1 from "./Project1";
 import Project2 from "./Project2";
 
 
-
-
-
-
 export default function V2ProjectsSection () {
 
 
     return (
         <>
-        <VStack id="projects-section" >
+        <VStack  id="projects-section" >
             <Box>
-                <Heading fontSize={'5xl'} >
+                <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }} >
                     <Text
                      as={'span'}
                      position={'relative'}
@@ -29,8 +25,8 @@ export default function V2ProjectsSection () {
                         PROJECTS</Text>
                 </Heading>
             </Box>
-                <Project1 />
-                <Project2 />
+            <Project1 />
+            <Project2 />
         </VStack>
         </>
     )

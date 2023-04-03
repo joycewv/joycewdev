@@ -57,7 +57,6 @@ import {
                 <Button
                     rounded={'full'}
                     size={'lg'}
-                    fontWeight={'normal'}
                     px={6}
                     colorScheme={'pink'}
                     bg={'pink.400'}
@@ -69,7 +68,6 @@ import {
                 <Button
                     rounded={'full'}
                     size={'lg'}
-                    fontWeight={'normal'}
                     px={6}
                     >
                     Live Demo

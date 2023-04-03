@@ -1,12 +1,11 @@
 /*import React, { useEffect, useRef } from "react";*/
-import { Box, Flex, HStack, Image, useMediaQuery, } from "@chakra-ui/react";
+import { Box, Image, Container, Stack, Spacer, useColorModeValue} from "@chakra-ui/react";
 
 
 
 
 export default function Navbar () {
 
-    const [isNotSmallerScreen] = useMediaQuery("(min-width:600px)");
 
     /*const headerRef = useRef(null);
     useEffect(() => {
@@ -44,29 +43,30 @@ export default function Navbar () {
 
     return (
         <>
-        <Box bg={'#F8F8FF'}>
-            <Flex
-             //maxWidth="1280px"
-             margin="0 auto"
-             justifyContent={'space-between'}
-             alignItems={'center'}
-             px={'10'}
+        <Box bg={useColorModeValue('gray.50', 'gray.900')} color={useColorModeValue('gray.700', 'gray.200')}>
+            <Container
+             spacing={4}
              py={'4'}
+             maxW={'7xl'}
+             as={Stack}
+             direction={{ base: 'column', md: 'row' }}
+             justify={{ base: 'center', md: 'space-between' }}
+             align={{ base: 'center', md: 'center' }}
              translateY={0}
              transitionProperty="transform"
              transitionDuration=".3s"
              transitionTimingFunction="ease-in-out"
-             direction={isNotSmallerScreen ? "row" : "column"}
              /*ref={headerRef}*/
              >
                 <Image src={require('../assets/joycew-logo-1.png')} alt={'logo'} width={'150'} height={'37.5'} />
-                <HStack spacing={6} fontSize={'lg'} fontWeight={'bold'} style={{ color: '#333333' }}>
+                <Spacer />
+                <Stack direction={'row'} spacing={8} fontSize={'lg'} fontWeight={'bold'}>
                     <a href="/">Home</a>
                     <a href="#about" onClick={handleClick("about")}  >About</a>
                     <a href="#projects" onClick={handleClick("projects")}>Projects</a>
                     <a href="#contact" onClick={handleClick("contact")}>Contact</a>
-                </HStack>
-            </Flex>
+                </Stack>
+            </Container>
         </Box>
         </>
     )
