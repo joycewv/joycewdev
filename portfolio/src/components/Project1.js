@@ -37,8 +37,9 @@ import {
               </Text>
             </Heading>
             <Text color={'gray.500'} fontSize={'lg'}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            A web app for Little Lemon Restaurant.
+            This project is the final project assessment of 
+            for Meta Front-End Developer Professional Certificate Program on Coursera.
             </Text>
             <Stack fontSize={'lg'}>
                 <Stack direction={'row'}>
@@ -64,7 +65,7 @@ import {
                     Code
                 </Button>
               </a>
-              <a href="https://clg-week10-assignement.netlify.app/">
+              <a href="https://little-lemon-jw.netlify.app/">
                 <Button
                     rounded={'full'}
                     size={'lg'}

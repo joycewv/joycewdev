@@ -33,12 +33,12 @@ import {
               </Text>
               <br />
               <Text as={'span'} color={'gray.700'} fontWeight={700}>
-                Name of project 2
+                Budget Tracker 📝
               </Text>
             </Heading>
             <Text color={'gray.500'} fontSize={'lg'}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              A web app for budget tracking. Can edit budget, add or remove expenses, 
+              tracking the expenses so far and remaining.
             </Text>
             <Stack fontSize={'lg'}>
                 <Stack direction={'row'}>
@@ -47,13 +47,13 @@ import {
                 </Stack>
                 <Stack direction={'row'}>
                     <Text>Third Party Libraries & APIs:</Text>
-                    <Text color={'gray.500'}>@chakra-ui/react, react-router-dom</Text>
+                    <Text color={'gray.500'}>bootstrap, react-icons, uuid</Text>
                 </Stack>
             </Stack>
             <Stack
               spacing={{ base: 4, sm: 6 }}
               direction={{ base: 'column', sm: 'row' }}>
-              <a href="https://github.com/joycewv/clg-week6">
+              <a href="https://github.com/joycewv/budget-tracker/tree/main/budgettracker">
                 <Button
                     rounded={'full'}
                     size={'lg'}
@@ -65,7 +65,7 @@ import {
                     Code
                 </Button>
               </a>
-              <a href="https://clg-week6-assignment.netlify.app/">
+              <a href="https://budget-tracker-jw.netlify.app/">
                 <Button
                     rounded={'full'}
                     size={'lg'}
