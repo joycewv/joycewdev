@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Heading, Text, VStack, useBreakpointValue} from "@chakra-ui/react";
 import Project1 from "./Project1";
 import Project2 from "./Project2";
+import Project3 from "./Project3";
 
 
 export default function V2ProjectsSection () {
@@ -27,6 +28,7 @@ export default function V2ProjectsSection () {
             </Box>
             <Project1 />
             <Project2 />
+            <Project3 />
         </VStack>
         </>
     )

@@ -4,6 +4,7 @@ import { Box, Image, Container, Stack, Spacer, useColorModeValue} from "@chakra-
 
 
 
+
 export default function Navbar () {
 
 
@@ -58,7 +59,9 @@ export default function Navbar () {
              transitionTimingFunction="ease-in-out"
              /*ref={headerRef}*/
              >
-                <Image src={require('../assets/joycew-logo-1.png')} alt={'logo'} width={'150'} height={'37.5'} />
+                <a href="/">
+                    <Image src={require('../assets/joycew-logo-1.png')} alt={'logo'} width={'150'} height={'37.5'} />
+                </a>
                 <Spacer />
                 <Stack direction={'row'} spacing={8} fontSize={'lg'} fontWeight={'bold'}>
                     <a href="/">Home</a>

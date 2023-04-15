@@ -66,7 +66,7 @@ import {
         <Flex>
           <Box
             bg="#fbd0d4"
-            color="white"
+            color="#333333"
             borderRadius="lg"
             m={{ sm: 4, md: 16, lg: 10 }}
             p={{ sm: 5, md: 5, lg: 16 }}>
@@ -113,7 +113,7 @@ import {
                         size="lg"
                         isRound={true}
                         _hover={{ bg: '#FF1493' }}
-                        icon={<FontAwesomeIcon icon={faLinkedinIn} size="lg"/>}
+                        icon={<FontAwesomeIcon icon={faLinkedinIn} size="lg" />}
                       />
                       <IconButton
                         aria-label="github"

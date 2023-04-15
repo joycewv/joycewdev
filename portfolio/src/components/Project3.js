@@ -9,7 +9,7 @@ import {
     Image,
   } from '@chakra-ui/react';
 
-  export default function Project1() {
+  export default function Project3() {
     return (
       <Container maxW={'7xl'}>
         <Stack
@@ -29,49 +29,47 @@ import {
                 fontSize={'md'}
                 fontWeight={800}
                 >
-                project 1
+                project 3
               </Text>
               <br />
               <Text as={'span'} color={'gray.700'} fontWeight={700}>
-                Little Lemon Restaurant 🍋
+                Robot Framework
               </Text>
             </Heading>
             <Text color={'gray.500'} fontSize={'lg'}>
-            A restaurant website using multiple librairies and APIs,
-            It helps restaurant owner engagement with their customers by providing them a better User Interface on the Web.
-            </Text>
-            <Text color={'gray.500'} fontSize={'lg'}>
-            This project was originally the final project assessment of 
-            Meta Front-End Developer Professional Certificate Program on Coursera.
+              ...test.
             </Text>
             <Stack fontSize={'lg'}>
                 <Stack direction={'row'}>
                     <Text>Tech Stack:</Text>
-                    <Text color={'gray.500'}>React.js</Text>
+                    <Text color={'gray.500'}>Robot Framework</Text>
                 </Stack>
                 <Stack direction={'row'}>
                     <Text>Third Party Libraries & APIs:</Text>
-                    <Text color={'gray.500'}>@chakra-ui/react, formik, react-router-dom</Text>
+                    <Text color={'gray.500'}></Text>
                 </Stack>
             </Stack>
             <Stack
               spacing={{ base: 4, sm: 6 }}
               direction={{ base: 'column', sm: 'row' }}>
-              <a href="https://github.com/joycewv/lemon-restaurant/tree/main/new-little-lemon">
+              <a href="https://github.com/joycewv/robot-testing">
                 <Button
                     rounded={'full'}
                     size={'lg'}
+                    fontWeight={'normal'}
                     px={6}
                     colorScheme={'pink'}
                     bg={'pink.400'}
-                    _hover={{ bg: 'pink.500' }}>
+                    _hover={{ bg: 'pink.500' }}
+                    >
                     Code
                 </Button>
               </a>
-              <a href="https://lemon-restaurant-jw.netlify.app/">
+              <a href="https://github.com/joycewv/robot-testing">
                 <Button
                     rounded={'full'}
                     size={'lg'}
+                    fontWeight={'normal'}
                     px={6}
                     >
                     Live Demo
@@ -93,13 +91,13 @@ import {
               width={'full'}
               overflow={'hidden'}>
               <Image
-                alt={'Project1 Image'}
+                alt={'Project2 Image'}
                 fit={'cover'}
                 align={'center'}
                 w={'100%'}
                 h={'100%'}
                 src={
-                  require('../assets/little-lemon-restaurant.png')
+                  require('../assets/robot-framework-testing.png')
                 }
               />
             </Box>

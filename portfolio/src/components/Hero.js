@@ -6,7 +6,8 @@ import {
     Heading,
     Text,
     Image,
-    HStack
+    HStack,
+    Tooltip
   } from '@chakra-ui/react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
@@ -55,13 +56,15 @@ import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
                 )
                 )}
             </HStack>
-            <HStack spacing={6}>
+            <HStack spacing={4}>
                 <Text fontSize={{ base: 'md', lg: 'xl' }} color={'gray.700'}>Tech Stack</Text>
                 <Text fontSize={'xl'}>|</Text>
-                <Image src="https://img.icons8.com/color/48/null/html-5--v1.png"/>
-                <Image src="https://img.icons8.com/color/48/null/css3.png" />
-                <Image src="https://img.icons8.com/color/48/null/javascript--v1.png" />
-                <Image src="https://img.icons8.com/color/48/null/react-native.png" />
+                <Image src="https://img.icons8.com/color/48/null/html-5--v1.png" alt={'html-5-logo'} boxSize={'32px'}/>
+                <Image src="https://img.icons8.com/color/48/null/css3.png" alt={'css3-logo'} boxSize={'32px'}/>
+                <Image src="https://img.icons8.com/color/48/null/javascript--v1.png" alt={'javascript-logo'} boxSize={'32px'}/>
+                <Image src="https://img.icons8.com/color/48/null/react-native.png" alt={'react-native-logo'} boxSize={'32px'}/>
+                <Tooltip label={'Robot Framework'}><Image src={require('../assets/Robot-framework-logo.png')} alt={'robot-framework-logo'} boxSize={'32px'}/></Tooltip>
+                <Image src="https://img.icons8.com/color/48/null/docker.png" alt={'docker-logo'} boxSize={'32px'}/>
             </HStack>
           </Stack>
           <Flex

@@ -17,7 +17,7 @@ import {
           spacing={{ base: 8, md: 10 }}
           py={{ base: 20, md: 28 }}
           direction={{ base: 'column', md: 'row' }}>
-          <Stack flex={1} spacing={{ base: 5, md: 10 }}>
+          <Stack flex={1} spacing={{ base: 5, md: 5 }}>
             <Heading
               lineHeight={1.1}
               >
@@ -43,7 +43,7 @@ import {
             <Stack fontSize={'lg'}>
                 <Stack direction={'row'}>
                     <Text>Tech Stack:</Text>
-                    <Text color={'gray.500'}>React</Text>
+                    <Text color={'gray.500'}>React.js</Text>
                 </Stack>
                 <Stack direction={'row'}>
                     <Text>Third Party Libraries & APIs:</Text>
@@ -61,7 +61,8 @@ import {
                     px={6}
                     colorScheme={'pink'}
                     bg={'pink.400'}
-                    _hover={{ bg: 'pink.500' }}>
+                    _hover={{ bg: 'pink.500' }}
+                    >
                     Code
                 </Button>
               </a>
@@ -97,7 +98,7 @@ import {
                 w={'100%'}
                 h={'100%'}
                 src={
-                  'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
+                  require('../assets/My-Budget-Planner-v2.png')
                 }
               />
             </Box>

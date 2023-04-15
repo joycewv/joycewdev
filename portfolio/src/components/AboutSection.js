@@ -44,11 +44,16 @@ import { Button, Heading, Stack, Text, Container,} from '@chakra-ui/react';
           A aspiring Front-end Developer based in Sydney, Australia 📍
         </Text>
         <Text color={'gray.500'} maxW={'3xl'} fontSize={{ base: 'md', lg: 'lg' }}>
-          As a Junior Front-End Developer, I possess an impressive arsenal of skills in HTML, CSS, JavaScript, React.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Hi, I'm Joyce. I am a Junior Front-end Web Developer who enjoys creating Front-end of Websites and Web Applications 
+          that leads to the success of the overall product. Check out some of my work in the Projects section.
+        </Text>
+        <Text color={'gray.500'} maxW={'3xl'} fontSize={{ base: 'md', lg: 'lg' }}>
+          I continuously acquire programming skills from online courses on renowned platforms such as Coursera, Udemy, and Code Like a Girl. 
+          I am a self-taught Front-end Web Developer with a strong despline to learn, improve and evolve. 
+        </Text>
+        <Text color={'gray.500'} maxW={'3xl'} fontSize={{ base: 'md', lg: 'lg' }}>
+          I'm open to Job opportunities where I can contribute, learn and grow. 
+          If you have a good opportunity that matches my skills and experience, don't hesitate to contact me.
         </Text>
         <a href="#contact" onClick={handleClick("contact")}>
           <Button rounded={'full'} bg={'hotpink'} color={'white'} _hover={{ bg: 'pink.500'}}>Contact me</Button>
