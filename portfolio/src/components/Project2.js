@@ -98,7 +98,7 @@ import {
                 w={'100%'}
                 h={'100%'}
                 src={
-                  require('../assets/My-Budget-Planner-v2.png')
+                  require('../assets/My-Budget-Planner-v4.png')
                 }
               />
             </Box>

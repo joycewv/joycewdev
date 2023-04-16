@@ -40,20 +40,19 @@ import { Button, Heading, Stack, Text, Container,} from '@chakra-ui/react';
               zIndex: -1,
             }}>About Me</Text>
         </Heading>
-        <Text as={'span'} color={'pink.400'} fontWeight={700} fontSize={{ base: 'xl', lg: '2xl' }}>
+        {/*<Text as={'span'} color={'pink.400'} fontWeight={700} fontSize={{ base: 'xl', lg: '2xl' }}>
           A aspiring Front-end Developer based in Sydney, Australia 📍
+          </Text>*/}
+        <Text color={'gray.500'} maxW={'3xl'} fontSize={{ base: 'md', lg: 'lg' }}>
+          Hi, I'm Joyce. I am a Junior Front-end Web Developer who enjoys creating Front-end of Websites and 
+          Web Applications that leads to the success of the overall product. 
         </Text>
         <Text color={'gray.500'} maxW={'3xl'} fontSize={{ base: 'md', lg: 'lg' }}>
-          Hi, I'm Joyce. I am a Junior Front-end Web Developer who enjoys creating Front-end of Websites and Web Applications 
-          that leads to the success of the overall product. Check out some of my work in the Projects section.
+          I am continuously acquiring new programming and automation skills through both online platform like Coursera, 
+          Udemy as well as guided program such as Code Like a Girl with a strong desire to learn, improve and evolve.
         </Text>
         <Text color={'gray.500'} maxW={'3xl'} fontSize={{ base: 'md', lg: 'lg' }}>
-          I continuously acquire programming skills from online courses on renowned platforms such as Coursera, Udemy, and Code Like a Girl. 
-          I am a self-taught Front-end Web Developer with a strong despline to learn, improve and evolve. 
-        </Text>
-        <Text color={'gray.500'} maxW={'3xl'} fontSize={{ base: 'md', lg: 'lg' }}>
-          I'm open to Job opportunities where I can contribute, learn and grow. 
-          If you have a good opportunity that matches my skills and experience, don't hesitate to contact me.
+          I'm open to internship or job opportunities where I can contribute, learn and grow. 
         </Text>
         <a href="#contact" onClick={handleClick("contact")}>
           <Button rounded={'full'} bg={'hotpink'} color={'white'} _hover={{ bg: 'pink.500'}}>Contact me</Button>

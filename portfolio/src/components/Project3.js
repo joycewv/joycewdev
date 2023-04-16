@@ -33,20 +33,24 @@ import {
               </Text>
               <br />
               <Text as={'span'} color={'gray.700'} fontWeight={700}>
-                Robot Framework
+                Robot Framework 🤖
               </Text>
             </Heading>
             <Text color={'gray.500'} fontSize={'lg'}>
-              ...test.
+              Use Robot Framework to do automated end-to-end testing from opening up the website, 
+              navigating to particular section, filling and submitting the form.
+            </Text>
+            <Text color={'gray.500'} fontSize={'lg'}>
+              Automated test will also generate reports and screenshots.
             </Text>
             <Stack fontSize={'lg'}>
                 <Stack direction={'row'}>
                     <Text>Tech Stack:</Text>
-                    <Text color={'gray.500'}>Robot Framework</Text>
+                    <Text color={'gray.500'}>Robot Framework on top of Python</Text>
                 </Stack>
                 <Stack direction={'row'}>
                     <Text>Third Party Libraries & APIs:</Text>
-                    <Text color={'gray.500'}></Text>
+                    <Text color={'gray.500'}>Selenium Library</Text>
                 </Stack>
             </Stack>
             <Stack
