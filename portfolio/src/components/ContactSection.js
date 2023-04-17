@@ -47,7 +47,7 @@ import {
       initialValues: {
         firstName: "",
         email: "",
-        Comment: "",
+        comment: "",
       },
 
       validationSchema: Yup.object({
@@ -59,6 +59,10 @@ import {
 
       }),
     })
+
+    const handleClick = () => {
+      formik.resetForm();
+    };
 
     return (
       <>
@@ -174,6 +178,7 @@ import {
                             color={'white'}
                             _hover={{ bg: 'pink.500'}}
                             type="submit" value="Send"
+                            onClick={handleClick}
                             >
                             Send Message
                           </Button>
