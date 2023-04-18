@@ -33,10 +33,12 @@ import {
     const form = useRef();
     const sendEmail = (e) => {
       e.preventDefault();
+      alert("Message Sent");
+      formik.resetForm();
       emailjs.sendForm('service_ddao7bx', 'template_rhtv45t', form.current, 'vtf7S3zvYoYTvrOvu')
       .then((result) => {
           console.log(result.text);
-          console.log("comment sent")
+          console.log("comment sent");
       }, (error) => {
           console.log(error.text);
       });
@@ -54,15 +56,11 @@ import {
         firstName: Yup.string().required("Required"),
         email: Yup.string().email("Invalid email address").required("Required"),
         comment: Yup.string()
-         .min(25, "Must be at least 25 characters")
+         .min(20, "Must be at least 20 characters")
          .required("Required"),
 
       }),
     })
-
-    const handleClick = () => {
-      formik.resetForm();
-    };
 
     return (
       <>
@@ -178,7 +176,6 @@ import {
                             color={'white'}
                             _hover={{ bg: 'pink.500'}}
                             type="submit" value="Send"
-                            onClick={handleClick}
                             >
                             Send Message
                           </Button>
