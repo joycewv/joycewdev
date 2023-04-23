@@ -101,7 +101,7 @@ import {
                 w={'100%'}
                 h={'100%'}
                 src={
-                  require('../assets/robot-framework-testing.png')
+                  require('../assets/robot-framework-testingv3.png')
                 }
               />
             </Box>
