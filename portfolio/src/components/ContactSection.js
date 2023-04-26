@@ -24,7 +24,8 @@ import {
     InputGroup,
     InputLeftElement,
     Textarea,
-    FormErrorMessage
+    FormErrorMessage,
+    Link
   } from '@chakra-ui/react';
 
 
@@ -109,22 +110,26 @@ import {
                       spacing={5}
                       px={5}
                       alignItems="flex-start">
-                      <IconButton
-                        aria-label="linkedin"
-                        variant="ghost"
-                        size="lg"
-                        isRound={true}
-                        _hover={{ bg: '#FF1493' }}
-                        icon={<FontAwesomeIcon icon={faLinkedinIn} size="lg" />}
-                      />
-                      <IconButton
-                        aria-label="github"
-                        variant="ghost"
-                        size="lg"
-                        isRound={true}
-                        _hover={{ bg: '#FF1493' }}
-                        icon={<FontAwesomeIcon icon={faGithub} size="lg"/>}
-                      />
+                        <Link href="https://www.linkedin.com/in/shuang-wang/">
+                          <IconButton
+                          aria-label="linkedin"
+                          variant="ghost"
+                          size="lg"
+                          isRound={true}
+                          _hover={{ bg: '#FF1493' }}
+                          icon={<FontAwesomeIcon icon={faLinkedinIn} size="lg" />}
+                        />
+                        </Link>
+                        <Link href="https://github.com/joycewv">
+                          <IconButton
+                          aria-label="github"
+                          variant="ghost"
+                          size="lg"
+                          isRound={true}
+                          _hover={{ bg: '#FF1493' }}
+                          icon={<FontAwesomeIcon icon={faGithub} size="lg"/>}
+                        />
+                        </Link>
                     </HStack>
                   </Box>
                 </WrapItem>
