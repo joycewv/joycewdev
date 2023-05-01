@@ -44,15 +44,20 @@ import { Button, Heading, Stack, Text, Container,} from '@chakra-ui/react';
           A aspiring Front-end Developer based in Sydney, Australia 📍
           </Text>*/}
         <Text color={'gray.500'} maxW={'3xl'} fontSize={{ base: 'md', lg: 'lg' }}>
-          Hi, I'm Joyce. I am a Junior Front-end Web Developer who enjoys creating Front-end of Websites and 
-          Web Applications that leads to the success of the overall product. 
+          /*Hi, I'm Joyce. I am a developer who specializes in front-end development, 
+          automation, and DevOps. */
+          As a developer, I enjoy building web applications, implementing automation, 
+          and practicing DevOps to ensure the overall success of a product.
         </Text>
         <Text color={'gray.500'} maxW={'3xl'} fontSize={{ base: 'md', lg: 'lg' }}>
-          I am continuously acquiring new programming and automation skills through both online platform like Coursera, 
-          Udemy as well as guided program such as Code Like a Girl with a strong desire to learn, improve and evolve.
+          /*I am continuously acquiring new programming and automation skills through both online platform like Coursera, 
+          Udemy as well as guided program such as Code Like a Girl with a strong desire to learn, improve and evolve.*/
+          I have a strong desire to learn, improve and evolve, continuously acquiring new programming and automation skills 
+          through online platforms such as Coursera and Udemy, as well as guided programs like 'Code Like a Girl'.
         </Text>
         <Text color={'gray.500'} maxW={'3xl'} fontSize={{ base: 'md', lg: 'lg' }}>
-          I'm open to internship or job opportunities where I can contribute, learn and grow. 
+          /*I'm open to internship or job opportunities where I can contribute, learn and grow. */
+          I am seeking internship or job opportunities that allow me to contribute, learn and grow.
         </Text>
         <a href="#contact" onClick={handleClick("contact")}>
           <Button rounded={'full'} bg={'hotpink'} color={'white'} _hover={{ bg: 'pink.500'}}>Contact me</Button>
