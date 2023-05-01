@@ -38,7 +38,7 @@ import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
               >
               <br />
               <Text as={'span'} color={'gray.700'} fontWeight={700}>
-                Front-End Developer 👋
+                Early Career Developer 👋
               </Text>
             </Heading>
             <Text color={'gray.500'} fontSize={'lg'}>
