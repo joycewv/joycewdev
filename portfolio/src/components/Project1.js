@@ -57,7 +57,7 @@ import {
             <Stack
               spacing={{ base: 4, sm: 6 }}
               direction={{ base: 'column', sm: 'row' }}>
-              <a href="https://github.com/joycewv/lemon-restaurant/tree/main/new-little-lemon">
+              <a href="https://github.com/joycewv/lemon-restaurant">
                 <Button
                     rounded={'full'}
                     size={'lg'}
