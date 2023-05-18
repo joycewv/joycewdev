@@ -1,4 +1,4 @@
-# joycew.dev portfolio website
+# joycew.dev Portfolio Website
 
 A developer portfolio website using multiple librairies and APIs, It helps website owner engagement with it's viewer by providing them a better User Interface on the Web.
  
