@@ -23,8 +23,10 @@ A developer portfolio website using multiple librairies and APIs, It helps websi
 ### Third Party Libraries & APIs:
 * @chakra-ui/react
 * formik
+* yup
 * react-router-dom
-* form.js
+* Font Awesome
+* EmailJS
 
 ### Install and Run:
 * Run 'npm start' on the portfolio folder
