@@ -45,7 +45,7 @@ import { Button, Heading, Stack, Text, Container,} from '@chakra-ui/react';
           </Text>*/}
         <Text color={'gray.500'} maxW={'3xl'} fontSize={{ base: 'md', lg: 'lg' }}>
         As an early career engineer/developer, I take great pleasure in improving my skills in DevOps, 
-        adeptly implementing automation, and creating web applications to effectively achieve our desired objectives.
+        adeptly implementing automation, and creating web applications to effectively achieve the desired objectives.
         </Text>
         <Text color={'gray.500'} maxW={'3xl'} fontSize={{ base: 'md', lg: 'lg' }}>
         I have a strong desire to learn, improve and evolve, continuously acquiring new AWS features, automation, and programming skills 
