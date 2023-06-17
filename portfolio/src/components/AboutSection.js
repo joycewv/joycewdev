@@ -44,12 +44,12 @@ import { Button, Heading, Stack, Text, Container,} from '@chakra-ui/react';
           A aspiring Front-end Developer based in Sydney, Australia 📍
           </Text>*/}
         <Text color={'gray.500'} maxW={'3xl'} fontSize={{ base: 'md', lg: 'lg' }}>
-          As a developer, I enjoy building web applications, implementing automation, 
-          and practicing DevOps to ensure the overall success of a product.
+        As an early career engineer/developer, I take great pleasure in improving my skills in DevOps, 
+        adeptly implementing automation, and creating web applications to effectively achieve our desired objectives.
         </Text>
         <Text color={'gray.500'} maxW={'3xl'} fontSize={{ base: 'md', lg: 'lg' }}>
-          I have a strong desire to learn, improve and evolve, continuously acquiring new programming and automation skills 
-          through online platforms such as Coursera and Udemy, as well as guided programs like 'Code Like a Girl'.
+        I have a strong desire to learn, improve and evolve, continuously acquiring new AWS features, automation, and programming skills 
+        through online platforms such as Coursera and Udemy, as well as guided programs like 'Code Like a Girl'.
         </Text>
         <Text color={'gray.500'} maxW={'3xl'} fontSize={{ base: 'md', lg: 'lg' }}>
           I am seeking internship or job opportunities that allow me to contribute, learn and grow.

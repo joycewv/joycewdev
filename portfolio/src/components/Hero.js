@@ -38,11 +38,11 @@ import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
               >
               <br />
               <Text as={'span'} color={'gray.700'} fontWeight={700}>
-                Early Career Developer 👋
+                Early Career Engineer 👋
               </Text>
             </Heading>
             <Text color={'gray.500'} fontSize={'lg'}>
-              Hi, I'm Joyce. Passionate Sydney-based developer specialises in front-end, automation & DevOps, seeks growth.
+              Hi, I'm Joyce, passionate engineer based in Sydney, specializing on AWS, automation and DevOps.
             </Text>
             <HStack spacing={8}>
                 {socials.map(({icon, url}) => (
