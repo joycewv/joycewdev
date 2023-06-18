@@ -26,7 +26,7 @@ export default function Footer () {
              justify={{ base: 'center', md: 'space-between' }}
              align={{ base: 'center', md: 'center' }}
              >
-                <Text fontWeight={'bold'}>© 2023 Joycew. All Rights Reserved.</Text>
+                <Text fontWeight={'bold'}>© 2023 Joyce Wang. All Rights Reserved.</Text>
                 <Spacer />
                 <Stack direction={'row'} spacing={8}>
                     {socials.map(({ icon, url}) => (
