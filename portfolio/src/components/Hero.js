@@ -42,7 +42,7 @@ import { faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
               </Text>
             </Heading>
             <Text color={'gray.500'} fontSize={'lg'}>
-              Hi, I'm Joyce, passionate engineer based in Sydney, specializing on AWS, automation and DevOps.
+              Hi, I'm Joyce, passionate engineer based in Sydney, focusing on AWS, automation and DevOps.
             </Text>
             <HStack spacing={8}>
                 {socials.map(({icon, url}) => (
